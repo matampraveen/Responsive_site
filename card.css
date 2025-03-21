@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(242, 197, 204, 0.61);
+    /* background-image: linear-gradient(black,rgb(243, 190, 199)); */
+}
+.header {
+    text-align: center;
+    font-size: 100px; /* Default for larger screens */
+    border: 2px solid gray;
+    box-shadow: 3px 3px pink;
+    border-radius: 10px;
+    margin: 10px;
+    text-shadow: 3px 3px rgb(229, 173, 173);
+}
+
+
+.card {
+    width: 350px;  /* Fixed width */
+    height: auto; /* Increased height to fit figcaption */
+    padding: 10px; /* Adjusted padding */
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(176, 210, 240);
+    margin: 10px;
+    display: inline-block;
+    margin-inline: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: radial-gradient(black, rgb(236, 209, 213));
+    overflow: hidden; /* Prevent content from overflowing */
+    text-align: center; /* Centers content */
+}
+
+.card img {
+    width: 100%;  /* Image takes full width */
+    height: 85%;  /* Allocates 85% height for the image */
+    object-fit: cover; /* Ensures image fills the space without distortion */
+    border-radius: 5px;
+}
+
+.card figcaption {
+    height: 15%; /* Allocates 15% height for the caption */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: darkred;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0; /* Stick to the bottom */
+    left: 0;
+    width: 100%; /* Full width to span the entire page */
+    text-align: center; /* Center text content */
+
+    padding: 10px 0; /* Add some padding */
+   
+}
+
+
+article{
+    margin:10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Small screens: Phones */
+@media (max-width: 480px) { 
+    @media (max-width: 480px) { 
+        article{
+            margin: 0;
+        }
+        .header {
+            font-size: 25px;
+            margin: 0;
+            text-align: center;
+        }
+    
+        .card {
+            min-width: 50%;
+            margin:10%;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centers vertically */
+            flex-direction: column; /* Stack content */
+            text-align: center;
+            
+        }
+    
+    }
+    
+
+ }
+
+/* Medium screens: Tablets */
+@media (min-width: 481px) and (max-width: 768px) { 
+  
+    .header {
+        font-size: 30px;
+        margin: 0;
+        text-align: center;
+       
+    }
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap:10px;
+    }
+
+    .card {
+        width:48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;        
+    }
+    .card img{
+        min-width: 200px;
+        height: auto;
+        max-width: 100%;
+    }
+   
+
+}
+ 
+
+/* Large screens: Laptops & small desktops */
+@media (min-width: 769px) and (max-width: 1200px) { 
+    .header {
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+       
+    }
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap:10px;
+    }
+
+    .card {
+        /* width:50%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;        
+    }
+ 
+ }
+
+/* Extra-large screens: Large desktops */
+@media (min-width: 1201px) { 
+    .header {
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+       
+    }
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap:10px;
+    }
+
+    .card {
+        /* width:50%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;        
+    }
+    
+ }
