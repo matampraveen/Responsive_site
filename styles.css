@@ -84,7 +84,8 @@ article{
 @media (max-width: 480px) { 
     @media (max-width: 480px) { 
         article{
-            margin: 0;
+            margin-left: 0;
+           margin-right: 150px;
         }
         .header {
             font-size: 25px;
