@@ -81,11 +81,13 @@ article{
 
 
 /* Small screens: Phones */
+
 @media (max-width: 480px) { 
-    @media (max-width: 480px) { 
         article{
-            margin-left: 0;
-           margin-right: 150px;
+          
+          padding: auto;
+          padding-right: 30px;
+          
         }
         .header {
             font-size: 25px;
@@ -94,8 +96,9 @@ article{
         }
     
         .card {
-            min-width: 50%;
-            margin:10%;
+            max-width: 90%;
+           
+            margin:25px;
             display: flex;
             justify-content: center;
             align-items: center; /* Centers vertically */
@@ -107,7 +110,7 @@ article{
     }
     
 
- }
+ 
 
 /* Medium screens: Tablets */
 @media (min-width: 481px) and (max-width: 768px) { 
